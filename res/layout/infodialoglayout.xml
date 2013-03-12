@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:baselineAligned="false"
+		android:layout_width="550px" android:layout_height="350px"
+		android:weightSum="1">
+		<LinearLayout android:id="@+id/linearLayout2"
+			android:layout_width="350dp" android:layout_height="match_parent"
+			android:orientation="vertical" android:layout_weight="0.44">
+
+			<ImageView
+			    android:id="@+id/info_Image"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:scaleType="fitXY"
+			    android:src="@drawable/cai_2" >
+			</ImageView>
+		</LinearLayout>
+	<LinearLayout android:orientation="vertical" android:id="@+id/linearLayout3"
+		android:layout_width="wrap_content" android:layout_weight="0.55"
+		android:layout_height="match_parent">
+		<TextView 
+		    android:layout_height="wrap_content"
+			android:layout_width="match_parent" 
+			android:text="菜名"
+			android:textSize="30sp"
+			android:id="@+id/info_cai_name"></TextView>
+		<TextView android:layout_height="wrap_content"
+			android:layout_width="match_parent" android:text="菜价"
+			android:textSize="30sp"
+			android:id="@+id/info_cai_price"></TextView>
+		<RatingBar android:id="@+id/info_cai_star" style="?android:attr/ratingBarStyleIndicator"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></RatingBar>
+		<TextView android:text="菜的描述" 
+			android:id="@+id/info_cai_info" 
+			android:textSize="27sp"
+			android:layout_width="match_parent" 
+			android:layout_height="wrap_content"></TextView>
+		<TextView android:text="所含营养成份"
+		    android:textSize="25sp"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"/>
+		
+		<TableLayout 
+		    android:stretchColumns="0,1"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content">
+		    <TableRow >
+		        <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textSize="25sp"
+		            android:text="@string/info_yingyang1"/>
+		        <TextView 
+		            android:textSize="25sp"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:id="@+id/info_yingyang1"
+		            android:text="@string/yingyang1"/>
+		    </TableRow>
+		    <TableRow >
+		        <TextView 
+		            android:textSize="25sp"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/info_yingyang2"/>
+		        <TextView 
+		            android:textSize="25sp"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:id="@+id/info_yingyang2"
+		            android:text="@string/yingyang1"/>
+		    </TableRow>
+		    <TableRow >
+		        <TextView 
+		            android:textSize="25sp"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/info_yingyang3"/>
+		        <TextView 
+		            android:textSize="25sp"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:id="@+id/info_yingyang3"
+		            android:text="@string/yingyang1"/>
+		    </TableRow>
+		    <TableRow >
+		        <TextView 
+		            android:textSize="25sp"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/info_yingyang4"/>
+		        <TextView 
+		            android:textSize="25sp"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:id="@+id/info_yingyang4"
+		            android:text="@string/yingyang1"/>
+		    </TableRow>
+		</TableLayout>
+		<Button 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="50px"
+		    android:layout_marginTop="20px"
+		    android:gravity="center"
+		    android:id="@+id/info_buy"
+		    android:text="确认购买"
+		    android:textSize="25sp"/>
+	</LinearLayout>
+
+	</LinearLayout>
+

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:id="@+id/buylistlayout"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  <TextView 
+    android:background="#cd5c5c"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:textSize="20sp"
+    android:text="已选择"/>
+  <RelativeLayout 
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:layout_gravity="center">
+    <TextView 
+    android:id="@+id/buylisttext"
+    android:textSize="25sp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="您已经选定的菜有："/>
+    <TableLayout 
+       android:paddingBottom="3dp"
+       android:stretchColumns="0,1"
+       android:layout_alignParentBottom="true"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" >
+        <TableRow >
+
+             <TextView
+                 android:id="@+id/buylistsum"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:text="合计 元"
+                 android:textSize="25sp" />
+
+             <Button
+                 android:id="@+id/buylist_submit"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:text="提交菜单"
+                 android:textSize="25sp" />
+
+        </TableRow>
+    </TableLayout>
+   
+    <ListView 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@id/buylistsum"
+    android:layout_below="@id/buylisttext"
+    android:id="@+id/buylistlist"
+    ></ListView>
+    </RelativeLayout>
+</LinearLayout>

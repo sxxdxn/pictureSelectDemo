@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" android:weightSum="1">
+  <TextView 
+    android:background="#cd5c5c"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:textSize="20sp"
+    android:text="选择营养组合"/>
+  
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ralative_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    >
+   
+    <LinearLayout
+	     android:layout_width="wrap_content"
+	     android:id="@+id/special_cebian"
+	     android:layout_height="match_parent"
+	     android:baselineAligned="false"
+	     android:orientation="vertical" >
+
+    		<RelativeLayout 
+   				android:layout_width="match_parent"
+   				android:layout_height="match_parent"
+   				android:layout_weight="1" android:gravity="bottom">
+	    		<Button 
+	    		android:id="@+id/spe_btn_buy"
+	    		android:text="已购"
+	    		android:gravity="center"
+	    		android:layout_height="wrap_content"
+	    		android:layout_width="wrap_content"/>
+	    	</RelativeLayout>
+	    	<RelativeLayout 
+   				android:layout_width="match_parent"
+   				android:layout_height="match_parent"
+   				android:layout_weight="1" android:gravity="center">
+	    		<Button 
+	    		android:id="@+id/spe_btn_like"
+	    		android:text="收藏"
+	    		android:gravity="center"
+	    		android:layout_height="wrap_content"
+	    		android:layout_width="wrap_content"/>
+	    	</RelativeLayout>
+	    	<RelativeLayout 
+   				android:layout_width="match_parent"
+   				android:layout_height="match_parent"
+   				android:layout_weight="1" android:gravity="top">
+	    		<Button 
+	    		android:id="@+id/spe_btn_rand"
+	    		android:text="随机"
+	    		android:gravity="center"
+	    		android:layout_height="wrap_content"
+	    		android:layout_width="wrap_content"/>
+	    	</RelativeLayout>
+    	</LinearLayout>
+    	
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:id="@+id/special_left"
+	android:layout_toRightOf="@id/special_cebian"
+	android:layout_width="200px"
+	android:layout_height="match_parent">
+	<TextView android:layout_width="match_parent" 
+			android:layout_height="wrap_content" 
+			android:textAppearance="?android:attr/textAppearanceLarge" 
+			android:id="@+id/special_YY1Text" 
+			android:text="@string/yingyang1"></TextView>
+	<RadioGroup 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/special_YY1Group"
+		android:visibility="gone"
+		android:layout_gravity="center_horizontal" 
+		android:orientation="horizontal">
+		<RadioButton 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/yy1_none"
+		android:text="@string/none"/>
+		<RadioButton 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/yy1_little"
+		android:text="@string/little"/>
+		<RadioButton 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/yy1_middle"
+		android:text="@string/middle"/>
+		<RadioButton 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/yy1_large"
+		android:text="@string/large"/>
+	</RadioGroup>
+	<TextView android:layout_width="match_parent" 
+			android:layout_height="wrap_content" 
+			android:textAppearance="?android:attr/textAppearanceLarge" 
+			android:id="@+id/special_YY2Text" 
+			android:text="@string/yingyang2"></TextView>
+	<RadioGroup 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/special_YY2Group"
+		android:visibility="gone"
+		android:layout_gravity="center_horizontal" 
+		android:orientation="horizontal">
+		<RadioButton 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/yy2_none"
+		android:text="@string/none"/>
+		<RadioButton 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/yy2_little"
+		android:text="@string/little"/>
+		<RadioButton 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/yy2_middle"
+		android:text="@string/middle"/>
+		<RadioButton 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/yy2_large"
+		android:text="@string/large"/>
+	</RadioGroup>
+	<TextView android:layout_width="match_parent" 
+			android:layout_height="wrap_content" 
+			android:textAppearance="?android:attr/textAppearanceLarge" 
+			android:id="@+id/special_YY3Text" 
+			android:text="@string/yingyang3"></TextView>
+	<RadioGroup 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/special_YY3Group"
+		android:visibility="gone"
+		android:layout_gravity="center_horizontal" 
+		android:orientation="horizontal">
+		<RadioButton 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/yy3_none"
+		android:text="@string/none"/>
+		<RadioButton 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/yy3_little"
+		android:text="@string/little"/>
+		<RadioButton 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/yy3_middle"
+		android:text="@string/middle"/>
+		<RadioButton 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/yy3_large"
+		android:text="@string/large"/>
+	</RadioGroup>
+	<TextView android:layout_width="match_parent" 
+			android:layout_height="wrap_content" 
+			android:textAppearance="?android:attr/textAppearanceLarge" 
+			android:id="@+id/special_YY4Text" 
+			android:text="@string/yingyang4"></TextView>
+	<RadioGroup 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/special_YY4Group"
+		android:visibility="gone"
+		android:layout_gravity="center_horizontal" 
+		android:orientation="horizontal">
+		<RadioButton 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/yy4_none"
+		android:text="@string/none"/>
+		<RadioButton 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/yy4_little"
+		android:text="@string/little"/>
+		<RadioButton 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/yy4_middle"
+		android:text="@string/middle"/>
+		<RadioButton 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/yy4_large"
+		android:text="@string/large"/>
+	</RadioGroup>
+	<Button 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/special_btn"
+	    android:text="提交"/>
+</LinearLayout>
+	<GridView 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:id="@+id/special_grid"
+	    android:numColumns="2"
+		android:gravity="center"
+	    android:layout_toRightOf="@id/special_left"></GridView>
+
+	 
+</RelativeLayout>
+</LinearLayout>

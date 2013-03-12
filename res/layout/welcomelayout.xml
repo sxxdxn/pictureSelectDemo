@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <TextView 
+    android:background="#cd5c5c"
+    android:id="@+id/welcomeText"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:layout_alignParentTop="true"
+    android:textSize="20sp"
+    android:text="欢迎光临！"/>
+    
+    
+    <LinearLayout 
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/wel_btn_layout"
+    android:orientation="horizontal">
+    	<LinearLayout 
+    	android:layout_height="match_parent"
+    	android:layout_width="wrap_content"
+    	android:orientation="vertical">
+    		<RelativeLayout 
+   				android:layout_width="match_parent"
+   				android:layout_height="match_parent"
+   				android:layout_weight="1" android:gravity="bottom">
+	    		<Button 
+	    		android:id="@+id/wel_btn_buy"
+	    		android:text="已购"
+	    		android:gravity="center"
+	    		android:layout_height="wrap_content"
+	    		android:layout_width="wrap_content"/>
+	    	</RelativeLayout>
+	    	<RelativeLayout 
+   				android:layout_width="match_parent"
+   				android:layout_height="match_parent"
+   				android:layout_weight="1" android:gravity="center">
+	    		<Button 
+	    		android:id="@+id/wel_btn_like"
+	    		android:text="收藏"
+	    		android:gravity="center"
+	    		android:layout_height="wrap_content"
+	    		android:layout_width="wrap_content"/>
+	    	</RelativeLayout>
+	    	<RelativeLayout 
+   				android:layout_width="match_parent"
+   				android:layout_height="match_parent"
+   				android:layout_weight="1" android:gravity="top">
+	    		<Button 
+	    		android:id="@+id/wel_btn_rand"
+	    		android:text="随机"
+	    		android:gravity="center"
+	    		android:layout_height="wrap_content"
+	    		android:layout_width="wrap_content"/>
+	    	</RelativeLayout>
+    	</LinearLayout>
+    	
+    	<RelativeLayout 
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent">
+    		<com.genius.scroll.MyScrollLayout    
+			  xmlns:android="http://schemas.android.com/apk/res/android"    
+			  android:id="@+id/ScrollLayout"  
+			  android:layout_below="@id/welcomeText"  
+			  android:layout_width="fill_parent"    
+			  android:layout_height="fill_parent">
+			  
+			   <FrameLayout    
+			  	android:background="@drawable/welcome1"    
+			  	android:layout_width="fill_parent"    
+			  	android:layout_height="fill_parent">
+			  </FrameLayout>   
+		      
+			  <FrameLayout    
+			  	android:background="@drawable/welcome2"    
+			  	android:layout_width="fill_parent"    
+			  	android:layout_height="fill_parent">
+			  </FrameLayout>    
+			      
+			  <FrameLayout     
+			  	android:background="@drawable/welcome3"     
+			  	android:layout_width="fill_parent"    
+			  	android:layout_height="fill_parent">      
+			  </FrameLayout>    
+			  
+			  <FrameLayout    
+			  	android:background="@drawable/welcome4"    
+			  	android:layout_width="fill_parent"    
+			  	android:layout_height="fill_parent">    
+			  </FrameLayout>    
+			  
+			  <FrameLayout    
+			  	android:background="@drawable/welcome5"    
+			  	android:layout_width="fill_parent"    
+			  	android:layout_height="fill_parent">    
+			  </FrameLayout> 
+			</com.genius.scroll.MyScrollLayout>
+	
+			<LinearLayout 
+				android:orientation="horizontal" 
+		    	android:layout_width="wrap_content" 
+		    	android:layout_height="wrap_content" 
+		    	android:layout_marginBottom="24.0dip" 
+		    	android:layout_alignParentBottom="true" 
+		    	android:layout_centerHorizontal="true">
+		    	<Button
+		    		android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    		android:id="@+id/wel_id_info"
+		    		android:text="查看详细说明"
+		    		/>
+		    		<LinearLayout 
+				    	android:orientation="horizontal" 
+				    	android:id="@+id/llayout" 
+				    	android:layout_width="wrap_content" 
+				    	android:layout_height="wrap_content" 
+				    	android:layout_marginBottom="24.0dip" 
+				    	android:layout_alignParentBottom="true" 
+				    	android:layout_centerHorizontal="true">
+				        <ImageView android:clickable="true"  
+				        	android:padding="15.0dip" 
+				        	android:layout_gravity="center_vertical" 
+				        	android:layout_width="wrap_content" 
+				        	android:layout_height="wrap_content" 
+				        	android:src="@drawable/guide_round" />
+				        <ImageView android:clickable="true"  
+				        	android:padding="15.0dip"  
+				        	android:layout_gravity="center_vertical" 
+				        	android:layout_width="wrap_content" 
+				        	android:layout_height="wrap_content" 
+				        	android:src="@drawable/guide_round" />
+				        <ImageView android:clickable="true"  android:padding="15.0dip"  android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/guide_round" />
+				        <ImageView android:clickable="true"  android:padding="15.0dip"  android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/guide_round" />
+				        <ImageView android:clickable="true"  android:padding="15.0dip"  android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/guide_round" />
+				    	
+				    </LinearLayout>
+		    	<Button
+		    		android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    		android:id="@+id/wel_id_buy"
+		    		android:text="加入点菜单"
+		    		/>
+		    		
+			</LinearLayout>
+		
+    	</RelativeLayout>
+    
+    </LinearLayout>
+     
+</LinearLayout>

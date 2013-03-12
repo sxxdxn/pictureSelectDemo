@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, PictureSelectDemoActivity!</string>
+    <string name="app_name">PictureSelectDemo</string>
+    <string name="none">无</string>
+    <string name="little">少量</string>
+    <string name="middle">中量</string>
+    <string name="large">大量</string>
+    <string name="yingyang1">营养1</string>
+    <string name="yingyang2">营养2</string>
+    <string name="yingyang3">营养3</string>
+    <string name="yingyang4">营养4</string>
+    <string name="info_yingyang1">营养1:</string>
+    <string name="info_yingyang2">营养2:</string>
+    <string name="info_yingyang3">营养3:</string>
+    <string name="info_yingyang4">营养4:</string>
+</resources>
